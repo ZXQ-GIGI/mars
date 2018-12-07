@@ -96,5 +96,5 @@ export function transformReplacement2Url(text) {
 }
 
 export function filterUrl(text) {
-  return xss(transformReplacement2Url(transformText2Replacement(transformSpecialChars(text))));
+  return xss(transformReplacement2Url(transformText2Replacement(text)));
 }
